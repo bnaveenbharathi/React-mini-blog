@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <%= title %>
+    </title>
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- main intro -->
+    <section class="section1">
+        <div class="section1-content" data-aos="zoom-in-up">
+            <div class="head-content">
+                <h2>
+                    <%= title %>
+                </h2>
+            </div>
+            <div class="main-content">
+                <h3>Empowering You to Stay Safe</h3>
+                <h4>Be Prepared, Stay Protected</h4>
+                <p>
+                    Your trusted partner in disaster preparedness, offering real-time alerts, vital guides, and
+                    community support for safety."
+                </p>
+            </div>
+            <div class="bottom-icon">
+                <a href="#section2"><img src="img/scroll.png" alt="" width="80px" id="scroll"></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- second intro -->
+    <div class="second-intro">
+
+        <section class="section2" id="section2">
+            <div class="login" data-aos="fade-right">
+                <a href="/login"><button>Login</button></a>
+            </div>
+            <div class="signup" data-aos="fade-left">
+                <a href=""><button>Signup</button></a>
+            </div>
+        </section>
+
+        <section class="section3 mt-5">
+
+            <div class="feature-wrapper">
+                <div class="feature" data-aos="fade-right">
+                    <div class="feature-content">
+                        <h2>Real-Time Disaster Alerts</h2>
+                        <p>Receive instant notifications on natural disasters like hurricanes and floods, keeping you
+                            informed and ready to act swiftly.</p>
+                    </div>
+                    <div class="feature-image">
+                        <img src="img/alerts.png" alt="Real-Time Disaster Alerts" width="320px">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Interactive Disaster Guides -->
+            <div class="feature-wrapper">
+                <div class="feature reverse" data-aos="fade-left">
+                    <div class="feature-image">
+                        <img src="img/guide.png" alt="Interactive Disaster Guides" width="320px">
+                    </div>
+                    <div class="feature-content">
+                        <h2>Interactive Disaster Guides</h2>
+                        <p>Access detailed, interactive guides for various disasters, offering step-by-step instructions
+                            and preparedness tips to ensure your safety.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Community Support and Forums -->
+            <div class="feature-wrapper">
+                <div class="feature" data-aos="fade-right">
+                    <div class="feature-content">
+                        <h2>Community Support and Forums</h2>
+                        <p>Join a supportive community to share experiences, ask questions, and get advice from others
+                            facing similar disaster challenges.</p>
+                    </div>
+                    <div class="feature-image">
+                        <img src="img/community.png" alt="Community Support and Forums" width="320px">
+                    </div>
+                </div>
+            </div>
+
+            <!-- AI-Powered Assistance -->
+            <div class="feature-wrapper">
+                <div class="feature reverse" data-aos="fade-left">
+                    <div class="feature-image">
+                        <img src="img/ai.png" alt="AI-Powered Assistance" width="320px">
+                    </div>
+                    <div class="feature-content">
+                        <h2>AI-Powered Assistance</h2>
+                        <p>Utilize AI-driven tools for personalized disaster advice, risk assessment, and real-time
+                            recommendations tailored to your specific needs.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Personalized Safety Recommendations -->
+            <div class="feature-wrapper">
+                <div class="feature" data-aos="fade-right">
+                    <div class="feature-content">
+                        <h2>Personalized Safety Recommendations</h2>
+                        <p>Get customized safety tips based on your location and risk factors, helping you to prepare
+                            effectively and stay protected.</p>
+                    </div>
+                    <div class="feature-image">
+                        <img src="img/safety.png" alt="Personalized Safety Recommendations" width="320px">
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </div>
+    <!-- script.js -->
+    <script src="https://kit.fontawesome.com/181ea7bd20.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>

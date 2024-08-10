@@ -1,0 +1,180 @@
+@import url('/css/root.css');
+
+body {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../img/intro.jpg') repeat-x center/cover;
+    z-index: -99;
+    background-attachment: fixed;
+    animation: img 30s ease-in-out infinite
+}
+
+.section1-content {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.head-content {
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%, -50%);
+}
+
+.head-content h2 {
+    font-size: clamp(25px, 9vw, 75px);
+    color: var(--background-color);
+    filter: drop-shadow(0px 8px 10px rgba(0, 0, 0, 0.9));
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.main-content h3,
+h4 {
+    font-size: clamp(25px, 6vw, 35px);
+    color: var(--hover-color);
+    filter: drop-shadow(0px 8px 10px rgba(0, 0, 0, 0.4));
+}
+
+.main-content h4 {
+    font-size: clamp(20px, 5vw, 25px);
+}
+
+.main-content p {
+    font-size: clamp(17px, 2vw, 25px);
+    line-height: 2;
+    color: var(--background-color);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.bottom-icon {
+    position: absolute;
+    left: 50%;
+   bottom: 10%;
+    transform: translateX(-50%);
+}
+
+#scroll {
+    opacity: 1;
+    animation: scroll 2s ease-in-out infinite;
+}
+
+/* second intro */
+.second-intro {
+    width: 100%;
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+#section2 {
+    padding: 3%;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    border-bottom: 1px solid var(--hover-color);
+}
+
+/* button works */
+.login button,
+.signup button {
+    width: 75px;
+    padding: 7px 10px;
+    border: 1px solid var(--accent-color);
+    border-radius: 4px;
+    transition: 0.4s;
+}
+
+.login button {
+    color: var(--background-color);
+    background: var(--hover-color);
+}
+
+.login button:hover {
+    color: var(--hover-color);
+    background: var(--background-color);
+}
+
+.signup button:hover {
+    color: var(--background-color);
+    background: var(--hover-color);
+}
+
+/* future contents */
+.feature-wrapper {
+    background: rgba(0, 0, 0, 0.4);
+    margin: 10px;
+    transition: 0.4s;
+}
+
+.feature-wrapper:hover {
+    transform: scale(1.04);
+}
+
+.feature {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    flex-wrap: wrap;
+    border: 1px solid white;
+}
+
+.feature-content {
+    flex: 1;
+    color: var(--background-color);
+}
+
+.feature-image {
+    padding: 10px;
+}
+
+.feature-image img {
+    max-width: 100%;
+
+    border-radius: 5px;
+    border: 2px solid var(--background-color);
+}
+
+/* animation */
+@keyframes scroll {
+    0% {
+        opacity: 0.5;
+        transform: translateY(-10px);
+    }
+
+    100% {
+        opacity: 0.7;
+        transform: translateY(10px);
+    }
+}
+
+@keyframes img {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    50% {
+        background-position: 60% 60%;
+    }
+
+    100% {
+        background-position: 0% 0%;
+
+    }
+}
