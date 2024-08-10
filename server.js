@@ -19,7 +19,7 @@
     })
     
     app.get('/login',(req,res)=>{
-     res.render('login',{title:title})
+     res.render('auth',{title:title})
     })
 
 
