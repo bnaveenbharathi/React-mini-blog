@@ -12,41 +12,61 @@
 <body>
 <div class="auth-container">
     <div class="login-contain">
-   <h2>Login</h2>
-<form action="">
-        <table>
-        
-            <tr>
-                <td>
-                    <label for="">Email :</label>
-                </td>
-                <td>
-                    <input type="email" name="email">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <label for="">Password :</label>
-                </td>
-                <td><input type="text" name="password">
-                </td>
-            </tr>
-            
-            <tr>
-                <td>
-                    <button type="submit">Login</button>
-                </td>
-            </tr>
-        
-        </table>
-        <p>Don't have an account? <a href="">signup</a></p>
-    </form>
-    </div>
-    <div class="signup-contain">
-        <h2>Signup</h2>
-        <form action="">
-                <table>
+        <img src="img/signup.png" alt="" class="signupimg">
+  <div class="login-section">
+    <h2>Login</h2>
+    <form action="/login" method="post">
+            <table>
+                <tr>
+                    <td>
+                        <label for="">Email :</label>
+                    </td>
+                    <td>
+                        <input type="email" name="email">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="">Password :</label>
+                    </td>
+                    <td><input type="text" name="password">
+                    </td>
+                </tr>
                 
+                <tr>
+                    <td>
+                        <button type="submit">Login</button>
+                    </td>
+                </tr>
+            
+            </table>
+            <p>Don't have an account? <span id="signupbtn">Signup</span></p>
+        </form>
+  </div>
+    </div>
+   <!-- signup contain -->  
+    <div class="signup-contain">
+        <img src="img/login.png" alt="" width="480px" class="loginimg">
+        <div class="signup-section">
+            <h2>Signup</h2>
+        <form action="/signup" method="post" >
+                <table>
+                    <tr>
+                        <td>
+                            <label for="">Name :</label>
+                        </td>
+                        <td>
+                            <input type="text" name="name">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="">Age :</label>
+                        </td>
+                        <td>
+                            <input type="number" name="age">
+                        </td>
+                    </tr>
                     <tr>
                         <td>
                             <label for="">Email :</label>
@@ -70,10 +90,48 @@
                     </tr>
                 
                 </table>
-                <p>Already have an account? <a href="">Login</a></p>
+                <p>Already have an account? <span id="loginbtn">Login</span></p>
             </form>
+        </div>
             </div>
 
 </div>
+
+<script>
+
+document.addEventListener("DOMContentLoaded",()=>{
+    const signupbtn=document.querySelector('#signupbtn')
+    const loginbtn=document.querySelector('#loginbtn')
+    const loginimg=document.querySelector('.loginimg')
+    const signupimg=document.querySelector('.signupimg')
+    const signupsection=document.querySelector('.signup-section')
+    const loginsection=document.querySelector('.login-section')
+
+    signupbtn.addEventListener('click',()=>{
+        
+        if(signupimg.style.display=='none'){
+            signupimg.style.display='block'
+            loginsection.style.display='none'
+            signupsection.style.display='block'
+            loginimg.style.display='none'
+        }
+       else{
+        signupimg.style.display='none'
+        loginsection.style.display='block'
+         signupsection.style.display='none'
+            loginimg.style.display='block'
+       }
+    })
+
+    loginbtn.addEventListener('click',()=>{
+         signupimg.style.display='none'
+         signupsection.style.display = 'none';
+        loginimg.style.display = 'block';
+        loginsection.style.display = 'block';
+    })
+
+})
+
+</script>
 </body>
 </html>

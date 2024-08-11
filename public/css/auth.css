@@ -22,11 +22,8 @@
     align-items: center;
     height: 100vh;
     background: rgba(0,0,0,0.2);
-    flex-direction: column;
-    gap: 10px;
-
-   
-}.login-contain{
+}
+.login-contain{
     border-right: 2px solid var(--background-color);
 }
 .login-contain h2,.signup-contain h2{
@@ -60,9 +57,16 @@ table tr td button:hover {
     color: var(--hover-color);
     background: var(--background-color);
 }
-p a{
-    text-decoration: none;
+p span{
+    cursor: pointer;
+    color: var(--hover-color);
 }
 p{
     padding: 10px;
+}
+.signup-section{
+display: none;
+}
+.login-contain img{
+    display: none;
 }
