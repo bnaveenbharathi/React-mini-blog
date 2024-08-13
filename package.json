@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "aos": "^3.0.0-beta.6",
+    "aos": "^3.0.0-betaw.6",
     "bcrypt": "^5.1.1",
     "ejs": "^3.1.10",
     "express": "^4.19.2",

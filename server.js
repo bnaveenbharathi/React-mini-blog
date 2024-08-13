@@ -1,12 +1,12 @@
     const express=require('express')
     const browsersync=require('browser-sync').create()
     const collection=require('./db/db')
-    const bcrypt=require('bcrypt')
+    const bcrypt = require('bcrypt');
     const session=require('express-session')
 
 
 
-
+ 
 
     const app=express()
 
@@ -14,9 +14,16 @@
     app.set('view engine','ejs')
     app.use(express.json())
     app.use(express.static('public'))
+    app.use(express.urlencoded({extended:true}))
+    app.use(session({
+        secret:'9ceee8fddd028b773b7e1f3714efe0960e5f3b7a08dfe45a8c28149e000876fc2beacc9ba657449eabd2670df75d2968e0c2556d55de0eec4c3',
+        resave:false,
+        saveUninitialized:false
+    }))
     const title="SafeGuardHub"
-    // routes
 
+
+    // routes
     app.get('/',(req,res)=>{
         res.render('main',{title:title})
     })
@@ -25,28 +32,34 @@
      res.render('auth',{title:title})
     })
 // signup
-    app.post('/signup',async (req,res)=>{
-        const data= {
-            name:req.body.name,
-            age:req.body.age,
-            email:req.body.email,
-            pass:req.body.password
-        }
-        try{
-            const existing=await collection.findOne({email:data.email})
-            if(existing){
-                return res.send('User Already Exists.')
-            }
-            const hashedpass=await bcrypt.hash(data.pass,5)
-            data.pass=hashedpass
+app.post('/signup', async (req, res) => {
+    const data = {
+        name: req.body.name,
+        age: req.body.age,
+        email: req.body.email,
+        password: req.body.password
+    };
 
-            await collection.create(data)
-            res.redirect('/login')
-        }catch(err){
-   console.log('Error During Signup',err)
-   res.status(500).send("Internal server error")
+    try {
+        const existing = await collection.findOne({ email: data.email });
+        if (existing) {
+            return res.send('User Already Exists.');
         }
-    })
+
+       
+        const hashedpass = await bcrypt.hash(data.password, 5); 
+        console.log(hashedpass)
+       
+       
+
+        await collection.create(data);
+        res.redirect('/auth');
+    } catch (err) {
+        console.log('Error During Signup', err);
+        res.status(500).send("Internal server error");
+    }
+});
+
 //    login
 app.post('/login',async(req,res)=>{
     const {email,password}=req.body

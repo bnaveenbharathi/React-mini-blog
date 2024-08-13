@@ -25,21 +25,10 @@ const userSchema=new mongoose.Schema({
     password:{
         type:String,
         required:true
-    },
-    ph_no:{
-        type:String,
-        required:true
-    }, 
-    location:{
-        type:String,
-        required:true
-    },
-    noti_pre:{
-        type:String,
     }
 
 })
 
-const collection=new mongoose.model('users',userSchema)
+const collection=new mongoose.model('user',userSchema)
 
 module.exports=collection

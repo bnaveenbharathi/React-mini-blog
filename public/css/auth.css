@@ -57,8 +57,9 @@ table tr td button:hover {
     color: var(--hover-color);
     background: var(--background-color);
 }
-p span{
-    cursor: pointer;
+p button{
+    background: none;
+    border: none;
     color: var(--hover-color);
 }
 p{
