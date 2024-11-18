@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD APP</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h2>Crud Operations</h2>
+
+    <form action="#" id="frm">
+
+        <input type="hidden" name="" id="">
+
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" name="name" placeholder="Full Name" id="name">
+        </div>
+        <div class="form-group">
+            <label for="age">Age</label>
+            <input type="text" name="age" placeholder="Age" id="age">
+        </div>
+        <div class="form-group">
+            <label for="city">City</label>
+            <input type="text" name="city" placeholder="City" id="city">
+        </div>
+
+        <button type="submit">Save</button>
+    </form>
+
+    <table>
+        <thead>
+            <th>S.NO</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>City</th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    1
+                </td>
+                <td>Mark</td>
+                <td>18</td>
+                <td>Theni</td>
+                <td><button><ion-icon name="create-outline"></ion-icon></button></td>
+                <td><button><ion-icon name="trash-outline"></ion-icon></button></td>
+            </tr>
+            <tr>
+                <td>
+                    1
+                </td>
+                <td>Mark</td>
+                <td>18</td>
+                <td>Theni</td>
+                <td><button><ion-icon name="create-outline"></ion-icon></button></td>
+                <td><button><ion-icon name="trash-outline"></ion-icon></button></td>
+            </tr>
+        </tbody>
+    </table>
+
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
