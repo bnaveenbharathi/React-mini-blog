@@ -20,9 +20,9 @@
 
     <h2>Crud Operations</h2>
 
-    <form action="#" id="frm">
+    <form action="#" id="frm" >
 
-        <input type="hidden" name="" id="">
+        <input type="hidden" name="" id="id">
 
         <div class="form-group">
             <label for="name">Name</label>
@@ -37,7 +37,7 @@
             <input type="text" name="city" placeholder="City" id="city">
         </div>
 
-        <button type="submit">Save</button>
+        <button type="submit" >Save</button>
     </form>
 
     <table>
@@ -49,27 +49,9 @@
             <th>Edit</th>
             <th>Delete</th>
         </thead>
-        <tbody>
-            <tr>
-                <td>
-                    1
-                </td>
-                <td>Mark</td>
-                <td>18</td>
-                <td>Theni</td>
-                <td><button><ion-icon name="create-outline"></ion-icon></button></td>
-                <td><button><ion-icon name="trash-outline"></ion-icon></button></td>
-            </tr>
-            <tr>
-                <td>
-                    1
-                </td>
-                <td>Mark</td>
-                <td>18</td>
-                <td>Theni</td>
-                <td><button><ion-icon name="create-outline"></ion-icon></button></td>
-                <td><button><ion-icon name="trash-outline"></ion-icon></button></td>
-            </tr>
+        <tbody id="tblbody">
+          
+          
         </tbody>
     </table>
 
@@ -80,7 +62,7 @@
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
 
-    <script src="script.js"></script>
+    <script src="script.js" type="module"></script>
 </body>
 
 </html>
