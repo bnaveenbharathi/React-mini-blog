@@ -1,8 +1,40 @@
-# React + Vite
+# Mini Blog React.js Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a simple blogging application built using React.js and JSON Server. It allows users to create, read, update, and delete blog posts.
 
-Currently, two official plugins are available:
+## Features
+- **CRUD Operations:** Create, Read, Update, and Delete blog posts.
+- **JSON Server:** Acts as a mock backend to handle API requests.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+## Installation
+
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/bnaveenbharathi/react-mini-blog.git
+   ```
+   ```bash
+   cd mini-blog-react
+   ```
+
+2. **Install Dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **Start the React App**
+   ```bash
+   npm run dev 
+   ```
+4.**Start the Json Server**
+   ```bash
+   npm run serve-json 
+   ```
+
+## Usage
+1. Create new blog posts using the provided form.
+2. Edit or delete posts directly from the blog list.
+
+
+![image](https://github.com/user-attachments/assets/e6fab64b-1148-446b-838c-741c0ecae1d1)
+
