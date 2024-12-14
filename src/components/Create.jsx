@@ -12,7 +12,7 @@ const Create = () => {
     const blog = { title, body, author }
     setPending(true)
     setTimeout(() => {
-      fetch('http://localhost:8000/blogs', {
+      fetch('https://json-server-8ahi.onrender.com/blogs', {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(blog)
