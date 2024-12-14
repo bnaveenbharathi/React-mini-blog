@@ -4,7 +4,6 @@ This is a simple blogging application built using React.js and JSON Server. It a
 
 ## Features
 - **CRUD Operations:** Create, Read, Update, and Delete blog posts.
-- **JSON Server:** Acts as a mock backend to handle API requests.
 
 
 ## Installation
@@ -26,10 +25,7 @@ This is a simple blogging application built using React.js and JSON Server. It a
    ```bash
    npm run dev 
    ```
-4.**Start the Json Server**
-   ```bash
-   npm run serve-json 
-   ```
+
 
 ## Usage
 1. Create new blog posts using the provided form.
